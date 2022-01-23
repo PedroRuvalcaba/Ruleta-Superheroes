@@ -1,7 +1,19 @@
+const apiUrl = 'https://superheroapi.com/api/access-token/'
+import './styles.css'
 
-import{saludar} from'./js/componentes.js';
-import './styles.css';
+const peticiones = new XMLHttpRequest();
 
-const nombre = 'Fernando';
+function manejoDePeticiones() {
+    if (this.readyState === 4 && this.status === 200) {
 
-saludar(nombre); 
+        const data = JSPN.parse(this.response)
+        console.log(data);
+    } else {
+        console.log("data");
+    }
+}
+
+
+// peticiones.addEventListener("load", manejoDePeticiones);
+// peticiones.open("GET", `${apiUrl}character-id/image`);
+// peticiones.send();
