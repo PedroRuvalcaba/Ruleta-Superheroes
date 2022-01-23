@@ -1,19 +1,11 @@
-const apiUrl = 'https://superheroapi.com/api/access-token/'
-import './styles.css'
 
-const peticiones = new XMLHttpRequest();
-
-function manejoDePeticiones() {
-    if (this.readyState === 4 && this.status === 200) {
-
-        const data = JSPN.parse(this.response)
-        console.log(data);
-    } else {
-        console.log("data");
-    }
-}
+const personajes = ["batman", "capi", "daredevil", "deadpool", "hawkeye", "hulk", "mujermaravilla", "ironman", "spider", "superman", "venom", "viuda"];
 
 
-// peticiones.addEventListener("load", manejoDePeticiones);
-// peticiones.open("GET", `${apiUrl}character-id/image`);
-// peticiones.send();
+console.log(personajes);
+
+const personajesAleatorios = _.shuffle(personajes);
+
+console.log(personajesAleatorios);
+
+
