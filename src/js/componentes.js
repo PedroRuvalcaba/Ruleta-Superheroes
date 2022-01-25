@@ -1,16 +1,18 @@
 
-import '../css/componentes.css'
+import '../css/style.css'
 
 
 
 
-export const saludar = ( nombre ) => {
-    console.log('Creando etiqueta h1');
+export const saludar = ( ) => {
 
-    const h1 = document.createElement('h1');
-    h1.innerText = `Hola, ${ nombre }`;
+    const divContainer = document.querySelector('.container-row'); 
+    const btnCambio = document.querySelector('#btnCambio');
+    const img = document.createElement('img');
+    
 
-    document.body.append(h1);
+    img.src = '../assets/img/batman.png';
+    divContainer.appendChild(img);
 
 }
 

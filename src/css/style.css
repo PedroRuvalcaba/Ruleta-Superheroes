@@ -1,0 +1,13 @@
+body{
+    background-color:silver;
+}
+
+.container-row{
+    display:flex;
+    justify-content: center;
+}
+
+.container-row img{
+    
+    background-color: skyblue;
+}
